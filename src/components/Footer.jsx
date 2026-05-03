@@ -1,15 +1,11 @@
-import Image from "next/image";
+
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 
-export default function Footer() {
-  return (
-
-
-
-
-    <div className="bg-green-600 text-white ">
+    const Footer = () => {
+        return (
+             <div className="bg-green-600 text-white ">
 
         <div className="flex justify-between mt-5 ">
             <div className="space-y-2">
@@ -30,8 +26,6 @@ export default function Footer() {
             <FaFacebook size={40}/>
             <FaInstagramSquare size={40}/>
             </div>
-          
-
         </div>
         </div>
         <div >
@@ -41,6 +35,9 @@ export default function Footer() {
             <p className="text-center mt-4">@2026 suncart .All rights reversed</p>
         </div>
     </div>
+        );
+    };
+    export default Footer;
+
+   
   
-  );
-}

@@ -10,6 +10,7 @@ const ProductsCard = ({brand}) => {
              
               <Image src={brand.imageUrl} 
               fill
+              sizes ="(max-width:768px) 100vw 33vw"
               alt={brand.title}
               className='rounded-xl object-cover'></Image>
             </div>

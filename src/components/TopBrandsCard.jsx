@@ -3,6 +3,7 @@ import ProductsCard from './ProductsCard';
 
 const TopBrandsCard = async () => {
     const res = await fetch("https://assignment-8-zeta-two.vercel.app/data.json");
+    
     const brandsCard = await res.json();
     const topBrands = brandsCard.slice(0, 9);
     console.log(topBrands)

@@ -5,7 +5,7 @@ import {Check} from "@gravity-ui/icons";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 
-const SignUpPage = () => {
+const RegisterPage = () => {
     const router = useRouter();
     const onSubmit = async(e)=>{
         e.preventDefault();
@@ -33,6 +33,7 @@ const SignUpPage = () => {
     }
     return (
         <div>
+          <h2>Register</h2>
                 <Form className="flex w-96 flex-col gap-4 mx-auto p-10 shadow-lg mt-10" onSubmit={onSubmit}>
         <TextField
         isRequired
@@ -107,4 +108,4 @@ const SignUpPage = () => {
     );
 };
 
-export default SignUpPage;
+export default RegisterPage;

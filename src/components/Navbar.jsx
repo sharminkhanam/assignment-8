@@ -4,6 +4,7 @@ import { Avatar } from '@heroui/react';
 import Link from 'next/link';
 import React from 'react';
 
+
 const Navbar = () => {
     const userData = authClient.useSession();
     const user = userData.data?.user
@@ -12,11 +13,12 @@ const Navbar = () => {
         await authClient.signOut()
     }
     return (
+        
         <div className='container mx-auto bg-sky-200 py-4 items-center shadow-lg '>
            <div className='flex justify-between'>
             <h2 className='text-2xl'> 🌞 SunCart</h2>
             <ul className='flex gap-5'>
-                <li>
+                   <li>
                     <Link href={'/'}>Home</Link>
                 </li>
                 <li>
@@ -29,10 +31,10 @@ const Navbar = () => {
                 <div className='flex'>
                     {
                       !user &&   <ul className='flex gap-2'><li>
-                    <Link href={'/signup'} className='bg-green-500 border px-3 py-2 rounded-md text-white'>Sign Up</Link>
+                    <Link href={'/register'} className='bg-green-500 border px-3 py-2 rounded-md text-white'>Register</Link>
                 </li>
                 <li>
-                    <Link href={'/signin'} className='bg-indigo-600 border px-3 py-2 rounded-md text-white'>Sign In</Link>
+                    <Link href={'/login'} className='bg-indigo-600 border px-3 py-2 rounded-md text-white'>LogIn</Link>
                 </li>
                 </ul>
                     }
