@@ -2,47 +2,39 @@
   
   {
     "id": 1,
-    "name": "Sci-Fi",
-    "slug": "scifi"
+    "category": "Accessories",
+    "brand": "Hydrolife"
   },
   {
     "id": 2,
-    "name": "Pixel Art",
-    "slug": "pixel-art"
+    "category":"Skincare",
+    "brand":"Skincare pro"
   },
   {
     "id": 3,
-    "name": "Fantasy",
-    "slug": "fantasy"
+    "category": "coolwear",
+    "brand": "Clothing"
   },
   {
     "id": 4,
-    "name": "Cyberpunk",
-    "slug": "cyberpunk"
+    "category": "Furits",
+    "brand":  "NaturalFarm"
   },
   {
     "id": 5,
-    "name": "Surreal",
-    "slug": "surreal"
+    "brand":  "Naturedrink",
+     "category": "Drinks"
   },
   {
     "id": 6,
-    "name": "Vaporwave",
-    "slug": "vaporwave"
+      "brand": "Naturecare",
+     "category": "SkinCare"
   },
   {
-    "id": 7,
-    "name": "Realistic",
-    "slug": "realistic"
-  },
-  {
-    "id": 8,
-    "name": "Minimal",
-    "slug": "minimal"
-  },
-  {
-    "id": 9,
-    "name": "Steampunk",
-    "slug": "steampunk"
+    "id" : 7,
+     "brand": "SunShade",
+      "category": "Accessories"
+
   }
+
 ]
