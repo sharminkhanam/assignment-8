@@ -4,6 +4,7 @@ import { Avatar } from '@heroui/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import NavLink from './NavLink';
 
 
 const Navbar = () => {
@@ -13,26 +14,24 @@ const Navbar = () => {
     const handelSignOut = async () => {
         await authClient.signOut()
     }
-    const pathname = usePathname();
-      const links = (path)=>{
-        return pathname === path ? " border-b-2 border-b-red-500 text-purple-500 font-bold text-xl": ""
-      }
+  
 
 
     return (
         
-        <div className='container mx-auto bg-sky-200 py-4 items-center shadow-lg '>
-           <div className='flex justify-between'>
+        <div className='bg-base-200 py-4 shadow-lg'>
+            <div className='container mx-auto  items-center  '>
+                 <div className='flex justify-between'>
             <h2 className='text-2xl'> 🌞 SunCart</h2>
             <ul className='flex gap-5'>
                    <li>
-                    <Link href={'/'} className={links("/")}>Home</Link>
+                     <NavLink href={'/'}>Home</NavLink>
                 </li>
                 <li>
-                    <Link href={'/all-products'} className={links("/all-products")}> Products</Link>
+                    <NavLink href={'/all-products'}> Products</NavLink>
                 </li>
                 <li>
-                    <Link href={'/profile'} className={links("/profile")}>profile</Link>
+                    <NavLink href={'/profile'} >profile</NavLink>
                 </li>
                 </ul>
                 <div className='flex'>
@@ -60,6 +59,8 @@ const Navbar = () => {
                 
            
            </div>
+            </div>
+          
         </div>
     );
 };
