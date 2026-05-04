@@ -29,14 +29,13 @@ const LogInPage = () => {
        toast.success("Login successful")
    
       
-        router.push('/');
-     
-      //console.log({data,error})
+        router.push('/'); 
     }
     const handelSignInGoole = async () => {
         await authClient.signIn.social({
             provider: "google"
-        })
+        });
+     
     }
     return (
         <Card className="w-full max-w-md mx-auto mt-10">
@@ -50,11 +49,11 @@ const LogInPage = () => {
           <div className="flex flex-col gap-4">
             <TextField name="email" type="email">
               <Label>Email</Label>
-              <Input placeholder="email@example.com" variant="secondary" />
+              <Input placeholder="john@example.coml" variant="secondary" />
             </TextField>
             <TextField name="password" type="password">
               <Label>Password</Label>
-              <Input placeholder="••••••••" variant="secondary" />
+              <Input placeholder="password" variant="secondary" />
             </TextField>
           </div>
         </Card.Content>

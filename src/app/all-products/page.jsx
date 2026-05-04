@@ -1,7 +1,7 @@
 import ProductsCard from "@/components/ProductsCard";
 
 
-const AllProductsOAge = async () => {
+const AllProductsPage = async () => {
         const res = await fetch("https://assignment-8-zeta-two.vercel.app/data.json");
     const brandsCard = await res.json();
     console.log(brandsCard)
@@ -18,4 +18,4 @@ const AllProductsOAge = async () => {
     );
 };
 
-export default AllProductsOAge;
+export default AllProductsPage;

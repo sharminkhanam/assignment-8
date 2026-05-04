@@ -17,9 +17,15 @@ const RegisterPage = () => {
         console.log({name,email,password})
         
        const {data, error} = await authClient.signUp.email({
-        name,email,image,password
+        name,
+        email,
+        image,
+        password
+        
 
        });
+       console.log({data,error})
+       
        if(error) {
         toast.error(error.message || " Registration failed");
         return;
@@ -29,12 +35,6 @@ const RegisterPage = () => {
        setTimeout(()=> {
         router.push('/login');
        }, 1000)
- 
-
-
-
-     
-     
     }
     return (
         <div >
