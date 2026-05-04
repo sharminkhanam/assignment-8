@@ -5,6 +5,7 @@ import {Check} from "@gravity-ui/icons";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 const LogInPage = () => {
     const router = useRouter();
@@ -20,8 +21,17 @@ const LogInPage = () => {
         email,password,
         callbackURL: '/'
 
-       })
-      console.log({data,error})
+       });
+       if(error) {
+        toast.error(error.message || " Login failed");
+        return;
+       }
+       toast.success("Login successful")
+   
+      
+        router.push('/');
+     
+      //console.log({data,error})
     }
     const handelSignInGoole = async () => {
         await authClient.signIn.social({

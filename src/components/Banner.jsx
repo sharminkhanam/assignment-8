@@ -7,23 +7,28 @@ const Banner = () => {
       {/* Overlay */}
       <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
         <div className="max-w-7xl mx-auto px-6 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 max-w-2xl">
-            Turn Ideas into Stunning AI Art
+          <div>
+             <h1 className="text-4xl md:text-6xl font-bold mb-4 max-w-2xl ">
+            Summer sale 50% off <br/>
           </h1>
+           <p className="text-2xl">Grab your favorit prodicts now!</p>.
+             <h2 className="text-2xl font-bold">Hot Deals</h2>
           <p className="text-lg md:text-xl mb-6 max-w-xl text-gray-200">
-            Generate high-quality images from simple text prompts.
+           Limited time offers available
           </p>
-
+          </div>
+         
           <div className="flex gap-4">
             <Link href="#">
-              <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500">
-                Generate Now
+              <Button className="bg-linear-to-r from-pink-500 via-purple-500
+               bg-red-500 text-sm">
+                Click to Purchase Now
               </Button>
             </Link>
 
             <Link href="/pricing">
-              <Button variant="outline" className="text-white">
-                View Pricing
+              <Button variant="outline" className="text-white text-sm">
+                Shop Now
               </Button>
             </Link>
           </div>

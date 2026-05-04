@@ -4,6 +4,7 @@ import {Button, Description, FieldError, Form, Input, Label, TextField} from "@h
 import {Check} from "@gravity-ui/icons";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 const RegisterPage = () => {
     const router = useRouter();
@@ -18,15 +19,25 @@ const RegisterPage = () => {
        const {data, error} = await authClient.signUp.email({
         name,email,image,password
 
+       });
+       if(error) {
+        toast.error(error.message || " Registration failed");
+        return;
        }
-        
-    
-        
-    )
-      console.log({data,error})
-      if(!error){
-        router.push('/')
-      }
+       toast.success("Registration successful")
+   
+       setTimeout(()=> {
+        router.push('/login');
+       }, 1000)
+ 
+
+  //setTimeout(() => {
+    //router.push("/login");
+  //}, 1000); chat gpt
+      //console.log({data,error})
+      //if(!error){
+        //router.push('/')
+     // }
 
      
      
