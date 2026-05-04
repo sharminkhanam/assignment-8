@@ -2,7 +2,7 @@
 import {  authClient} from '@/lib/auth-client';
 import { Avatar } from '@heroui/react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+
 import React from 'react';
 import NavLink from './NavLink';
 

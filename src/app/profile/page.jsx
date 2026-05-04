@@ -11,7 +11,7 @@ const ProfilePage = () => {
     const user = userData.data?.user;
     //console.log(user)
     if(!user){
-        redirect('/singnin')
+        redirect('/login')
     }
     return (
         <Card className="max-w-96 mx-auto flex flex-col items-center p-24 my-12 ">

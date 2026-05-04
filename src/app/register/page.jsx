@@ -31,21 +31,17 @@ const RegisterPage = () => {
        }, 1000)
  
 
-  //setTimeout(() => {
-    //router.push("/login");
-  //}, 1000); chat gpt
-      //console.log({data,error})
-      //if(!error){
-        //router.push('/')
-     // }
+
 
      
      
     }
     return (
-        <div>
-          <h2>Register</h2>
-                <Form className="flex w-96 flex-col gap-4 mx-auto p-10 shadow-lg mt-10" onSubmit={onSubmit}>
+        <div >
+         
+        <h2 className=" text-2xl font-bold text-center my-5">Register your acoount</h2>
+         
+        <Form className="flex w-96 flex-col gap-4 mx-auto p-10 shadow-lg mt-10" onSubmit={onSubmit}>
         <TextField
         isRequired
         name="name"
