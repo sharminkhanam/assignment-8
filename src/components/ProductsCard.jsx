@@ -23,8 +23,8 @@ const ProductsCard = ({brand}) => {
             </div>
            
            <Link href={`/all-products/${brand.id}`}> 
-           <button variant = 'outline ' 
-           className={'w-full bg-purple-800 text-white px-2 py-1 rounded-full hover:animate_pluse animate_animated'}>
+           <button 
+           className={'w-full bg-purple-800 text-white px-2 py-1 rounded-full hover:scale-110 transition  '}>
             Product Details</button></Link>
             
            

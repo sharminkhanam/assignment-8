@@ -6,8 +6,8 @@ import { FaInstagramSquare } from "react-icons/fa";
     const Footer = () => {
         return (
              <div className="bg-green-600 text-white ">
-
-        <div className="flex justify-between mt-5 ">
+                <div className="mx-auto container">
+                    <div className="flex justify-between mt-5 ">
             <div className="space-y-2">
                  <h2 className='text-5xl text-center '> 🌞 
                     </h2>
@@ -29,11 +29,21 @@ import { FaInstagramSquare } from "react-icons/fa";
         </div>
         </div>
         <div >
-        <hr className='w-400 ml-30 mt-5'/>
+        <hr />
          </div>
-        <div>
+        <div className="flex justify-between">
             <p className="text-center mt-4">@2026 suncart .All rights reversed</p>
+            <div className="flex gap-4 mt-4">
+                <p className='text-white'>Privacy Policy </p>
+            <p className='text-white'>Terms of Service </p>
+            <p className='text-white'>Cookies</p>
+            </div>
+            
         </div>
+                </div>
+
+        
+      
     </div>
         );
     };
