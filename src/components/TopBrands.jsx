@@ -5,7 +5,7 @@ import Image from "next/image";
 const brands = [
     {name: "Nike", logo:"/brands/nike.png"},
     {name: "Adidas", logo:"/brands/adidas.jpg"},
-    {name: "Puma", logo:"/brands/puma.png"},
+    {name: "Puma", logo:"/brands/puma.jpg"},
     {name: "Reebok", logo:"/brands/reebok.png"},
 ];
 
@@ -16,7 +16,7 @@ const TopBrands = () => {
             <div className="grid grid-cols-4 gap-4 ">
                 {
                     brands.map((b, index)=>(
-                        <div key={index} className=" bg-amber-300 shadow-lg p-8">
+                        <div key={index} className=" bg-amber-300 shadow-lg p-8 space-y-3">
                             <div className="w-[200px] h-[200px] mx-auto">
                                   <Image src={b.logo} alt={b.name} 
                                 height={200} width={200}

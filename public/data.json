@@ -1,14 +1,14 @@
 [
    {
     "id": 1,
-    "name": "UV Protection Sunglasses",
-    "brand": "SunShade",
-    "price": 15,
-    "rating": 4.7,
-    "stock": 10,
-    "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "/images/sunglass.png",
-    "category": "Accessories"
+    "name":  "pure mustard oil",
+    "brand": "Golden harvest",
+    "price": 8,
+    "rating": 4.8,
+    "stock": 40,
+    "description":"100% pure mustard oil,ideal for cokking and traditional uses with rich aroma",
+    "image": "/images/mustard-oil.png",
+    "category": "Food"
   },
   {
     "id": 2,
@@ -33,27 +33,29 @@
     "image": "/images/cocount-water.png",
     "category": "Drinks"
   },
-   {
+  {
     "id": 4,
-    "name": "Fresh watermelon",
-    "brand": "NaturalFarm",
-    "price": 12,
-    "rating": 4.5,
-    "stock": 8,
-    "description": "LightWeigth straw hat ideal for sunny beach days",
-    "image": "/images/water-melon.png",
-    "category": "Furits"
+    "name": "Reusable water bottle",
+    "brand": "Hydrolife",
+    "price":8,
+    "rating": 4.6,
+    "stock": 30,
+    "description":"Eco-friendly bottle to stay hydrated all summer" ,
+    "image": "/images/water-pot.png",
+    "category": "Accessories"
   },
+ 
    {
     "id": 5,
-    "name": "Benena bunch",
-    "brand": "Farmpick",
-    "price": 2,
-    "rating": 4.6,
-    "stock": 40,
-    "description": "Energy-rich benenas perfect for daily nutrition",
-    "image": "/images/benena.png",
-    "category": "Furits"
+     "name": "Ajwa dates",
+    "brand": "Desert fresh",
+    "price": 12,
+     "rating": 4.8,
+     "stock": 40,
+    "description": "Premium Ajwa dates known for thir rich taste and soft texture.",
+     "image": "/images/ajwa.png",
+     "category": "Foods"
+   
   },
    {
     "id": 6,
@@ -65,18 +67,10 @@
     "description": "Heigh protection sunscreen to keep your skine safe",
     "image": "/images/skin-care.png",
     "category": "Skincare"
-  },
- 
-  {
-    "id": 7,
-    "name": "Reusable water bottle",
-    "brand": "Hydrolife",
-    "price":8,
-    "rating": 4.6,
-    "stock": 30,
-    "description":"Eco-friendly bottle to stay hydrated all summer" ,
-    "image": "/images/water-pot.png",
-    "category": "Accessories"
   }
+ 
+  
 ]
+
+
  
