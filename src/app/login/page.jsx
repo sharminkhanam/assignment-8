@@ -50,7 +50,7 @@ const LogInPage = () => {
         </Card.Content>
         <Card.Footer className="mt-4 flex flex-col gap-2">
           <Button className="w-full text-xl" type="submit">
-            Log In
+            LogIn
           </Button>
          
         </Card.Footer>

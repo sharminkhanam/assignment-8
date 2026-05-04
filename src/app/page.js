@@ -1,7 +1,8 @@
 import Banner from "@/components/Banner";
 import CareTips from "@/components/CareTips";
 import TopBrandsCard from "@/components/TopBrandsCard";
-import TopProducts from "@/components/TopProducts";
+
+import TopBrands from "@/components/TopBrands";
 
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <Banner/>
       <TopBrandsCard/>
       <CareTips/>
-      <TopProducts/>
+      <TopBrands/>
     </div>
   );
 }

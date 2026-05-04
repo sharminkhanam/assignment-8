@@ -25,7 +25,8 @@ const ProductsCard = ({brand}) => {
            
            <Link href={`/all-products/${brand.id}`}> 
            <button variant = 'outline ' 
-           className={'w-full bg-purple-800 text-white px-2 py-1 rounded-full'}>Product Details</button></Link>
+           className={'w-full bg-purple-800 text-white px-2 py-1 rounded-full'}>
+            Product Details</button></Link>
             
            
         </Card>
