@@ -10,7 +10,6 @@ const ProductsCard = ({brand}) => {
              
               <Image src={brand.image} 
               fill
-              sizes ="(max-width:768px) 100vw, 33vw"
               alt={brand.name}
               className='rounded-xl object-cover'></Image>
             </div>
@@ -25,7 +24,7 @@ const ProductsCard = ({brand}) => {
            
            <Link href={`/all-products/${brand.id}`}> 
            <button variant = 'outline ' 
-           className={'w-full bg-purple-800 text-white px-2 py-1 rounded-full'}>
+           className={'w-full bg-purple-800 text-white px-2 py-1 rounded-full hover:animate_pluse animate_animated'}>
             Product Details</button></Link>
             
            

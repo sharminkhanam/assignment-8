@@ -7,9 +7,12 @@ const CareTips = () => {
         <div className='my-16 bg-base-300 p-12 rounded-3xl shadow-lg '>
             <h2 className='text-4xl font-bold text-center my-10 '>Summer Care</h2>
             <div className='flex justify-center gap-12'>
-                <Image src="/images/care.png" alt="care"  width={400}
-             height={400}>
+               
+                        <Image src="/images/care.png" alt="care" height={400} width={400}
+            className='rounded-xl object-cover'>
             </Image>
+              
+            
            
               
             <div className='space-y-5 mt-10'>

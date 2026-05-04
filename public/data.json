@@ -24,14 +24,14 @@
   },
   {
     "id": 3,
-    "name": "Cocount water drink",
+    "name": "Cocount oil",
     "brand":  "Naturedrink",
     "price": 15,
     "rating": 4.7,
     "stock": 50,
-    "description": "Natural cocount water to hydrate and your body instantly",
-    "image": "/images/cocount-water.png",
-    "category": "Drinks"
+    "description": "Natural cocount oil all that helps hydrate and nourish instantly",
+    "image": "/images/cocount-oil.png",
+    "category": "oil"
   },
   {
     "id": 4,

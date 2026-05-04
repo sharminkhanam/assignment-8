@@ -12,7 +12,7 @@ const Banner = () => {
             Summer sale 50% off <br/>
           </h1>
            <p className="text-2xl">Grab your favorit prodicts now!</p>.
-             <h2 className="text-2xl font-bold">Hot Deals</h2>
+             <h2 className="text-2xl font-bold animate_animated animate_fadeInUp">Hot Deals</h2>
           <p className="text-lg md:text-xl mb-6 max-w-xl text-gray-200">
            Limited time offers available
           </p>

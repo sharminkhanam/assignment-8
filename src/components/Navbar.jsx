@@ -2,6 +2,7 @@
 import {  authClient} from '@/lib/auth-client';
 import { Avatar } from '@heroui/react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 
@@ -12,6 +13,12 @@ const Navbar = () => {
     const handelSignOut = async () => {
         await authClient.signOut()
     }
+    const pathname = usePathname();
+      const links = (path)=>{
+        return pathname === path ? " border-b-2 border-b-red-500 text-purple-500 font-bold text-xl": ""
+      }
+
+
     return (
         
         <div className='container mx-auto bg-sky-200 py-4 items-center shadow-lg '>
@@ -19,13 +26,13 @@ const Navbar = () => {
             <h2 className='text-2xl'> 🌞 SunCart</h2>
             <ul className='flex gap-5'>
                    <li>
-                    <Link href={'/'}>Home</Link>
+                    <Link href={'/'} className={links("/")}>Home</Link>
                 </li>
                 <li>
-                    <Link href={'/all-products'}>All Products</Link>
+                    <Link href={'/all-products'} className={links("/all-products")}> Products</Link>
                 </li>
                 <li>
-                    <Link href={'/profile'}>profile</Link>
+                    <Link href={'/profile'} className={links("/profile")}>profile</Link>
                 </li>
                 </ul>
                 <div className='flex'>
@@ -47,7 +54,8 @@ const Navbar = () => {
         <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
       
       </Avatar>
-        <button onClick={handelSignOut} variant="danger" size="sm">SignOut</button></div>
+        <button onClick={handelSignOut} className='bg-red-500 text-white text-sm 
+        p-3 font-bold rounded-full'>SignOut</button></div>
                 }
                 
            

@@ -17,11 +17,11 @@ const TopBrands = () => {
                 {
                     brands.map((b, index)=>(
                         <div key={index} className=" shadow-lg p-8 space-y-3">
-                            <div className="w-[200px] h-[200px] mx-auto">
+                            <div className="relative w-full aspect-square mx-auto">
                                   <Image src={b.logo} alt={b.name} 
-                                height={200} width={200}
+                                fill
                           
-                            className="w-full h-full rounded-xl object-contain object-cover">
+                            className=" rounded-xl  object-cover">
                                
                             </Image>
                             </div>

@@ -14,8 +14,8 @@ const ProfilePage = () => {
         redirect('/singnin')
     }
     return (
-        <Card className="max-w-96 mx-auto flex flex-col items-center">
-           profile
+        <Card className="max-w-96 mx-auto flex flex-col items-center p-24 my-12 ">
+           Profile
            <div >
                                 <Avatar size="sm" >
         <Avatar.Image alt="John Doe" size="sm" src={user?.image} 
