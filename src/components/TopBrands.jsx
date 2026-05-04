@@ -16,7 +16,7 @@ const TopBrands = () => {
             <div className="grid grid-cols-4 gap-4 ">
                 {
                     brands.map((b, index)=>(
-                        <div key={index} className=" bg-amber-300 shadow-lg p-8 space-y-3">
+                        <div key={index} className=" shadow-lg p-8 space-y-3">
                             <div className="w-[200px] h-[200px] mx-auto">
                                   <Image src={b.logo} alt={b.name} 
                                 height={200} width={200}

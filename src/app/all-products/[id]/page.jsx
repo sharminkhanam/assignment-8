@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ProductDetailsPage =async ({params}) => {
@@ -9,8 +10,25 @@ const ProductDetailsPage =async ({params}) => {
     console.log(id, detailsCard, singelCard)
     return (
         <div>
-            productDetail
-            {singelCard.name}
+            ProductDetail
+            <div>
+                <h2 className='text-2xl font-bold'>{singelCard.name}</h2>
+                <div>
+                  <Image src={singelCard.image} alt={singelCard.name}
+            height={400} width={400}></Image>
+             <p className='text-xl font-bold'>Description :{singelCard.description}</p>
+            </div>
+           
+            <div className='space-y-3 font-bold'>
+                <p>Rating : {singelCard.rating}</p>
+                <p>Price : {singelCard.price}</p>
+                <p>Brand : {singelCard.brand}</p>
+                <p>Stock : {singelCard.stock}</p>
+                <p>Category :{singelCard.category}</p>
+            </div>
+            </div>
+            
+           
         </div>
     );
 };
